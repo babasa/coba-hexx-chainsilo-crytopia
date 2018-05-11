@@ -8,4 +8,4 @@ pool
 y
 
 EOF
-&& sleep 3
+&& echo newline
