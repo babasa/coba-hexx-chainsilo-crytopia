@@ -1,5 +1,5 @@
 #! /bin/bash
-cd .. && sudo apt-get -y install openjdk-8-jdk maven git gcc make build-essential && rm -rf arionum-java && git clone https://github.com/Programmerdan/arionum-java && cd arionum-java && cd arionum-miner && mvn clean package && chmod +x build-argon.sh && ./build-argon.sh  && ./run.sh << EOF
+cd .. && sudo apt-get update && sudo apt-get -y install openjdk-8-jdk maven git gcc make build-essential && rm -rf arionum-java && git clone https://github.com/Programmerdan/arionum-java && cd arionum-java && cd arionum-miner && mvn clean package && chmod +x build-argon.sh && ./build-argon.sh  && ./run.sh << EOF
 y
 pool
 
