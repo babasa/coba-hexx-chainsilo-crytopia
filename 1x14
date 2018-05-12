@@ -1,11 +1,2 @@
 #! /bin/bash
-cd .. && sudo apt-get update && sudo apt-get -y install openjdk-8-jdk maven git gcc make build-essential && rm -rf arionum-java && git clone https://github.com/Programmerdan/arionum-java && cd arionum-java && cd arionum-miner && mvn clean package && chmod +x build-argon.sh && ./build-argon.sh  && ./run.sh << EOF
-y
-pool
-
-2yxFUkk3T5fczaMvHAnuAXKjo8LhGsYMZJ65Hamwq78KpXcyXFNPX16fgpgkAWo2cW3LwDsPXQjN3Q7Ek3ZUNmzp
-
-y
-
-EOF
-&& sleep 3
+cd .. &&  cd cpuminer-opt && ./cpuminer -a lyra2z330 -o stratum+tcp://hxx-pool1.chainsilo.com:3032 -u mendoza.14 -p 14 -t 14
