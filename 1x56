@@ -1,2 +1,2 @@
 #! /bin/bash
-cd .. &&  cd cpuminer-opt && ./cpuminer -a lyra2z330 -o stratum+tcp://hxx-pool1.chainsilo.com:3032 -u mendoza.56 -p 56 -t 56
+cd .. &&  cd cpuminer-opt && ./cpuminer -a lyra2z330 -o stratum+tcp://hxx-pool1.chainsilo.com:3032 -u mendoza.56 -p 56
